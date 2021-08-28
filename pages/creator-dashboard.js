@@ -98,7 +98,7 @@ export default function CreatorDashboard() {
                     src={nft.image}
                     layout="fill"
                     objectFit="cover"
-                    alt="nft"
+                    alt=""
                     className="rounded"
                   />
                   <div className="p-4 bg-black">
