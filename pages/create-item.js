@@ -83,7 +83,7 @@ export default function CreateItem() {
   return (
     <div>
       <Head>
-        <title>Digitales Gut verkaufen</title>
+        <title>Marktplatz | Digitales Gut verkaufen</title>
       </Head>
       <div className="flex justify-center">
         <div className="flex flex-col w-1/2 pb-12">
