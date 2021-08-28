@@ -2,7 +2,7 @@
 
 ## Nur ein weiterer NFT Marktplatz
 
-![shots/sneakp1.png]
+![Screenshot1](shots/sneakp1.png)
 
 ### Basic Sample Hardhat Project
 
