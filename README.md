@@ -9,7 +9,10 @@ npx hardhat accounts
 npx hardhat compile
 npx hardhat clean
 npx hardhat test
+## test frontend ##
+# first run
 npx hardhat node
-node scripts/sample-script.js
+# in a second terminal run
+npx hardhat run scripts/deploy.js --network localhost
 npx hardhat help
 ```
