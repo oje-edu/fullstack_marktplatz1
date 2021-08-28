@@ -74,7 +74,13 @@ export default function CreatorDashboard() {
               <div className="p-4 bg-black">
                 <p className="text-2xl font-bold text-white">{nft.name}</p>
               </div>
-              <img src={nft.image} className="rounded" />
+              <Image
+                src={nft.image}
+                layout="fill"
+                objectFit="cover"
+                alt=""
+                className="rounded"
+              />
               <div className="p-4 bg-black">
                 <p className="text-2xl font-bold text-white">
                   Preis - {nft.price} Matic
