@@ -55,7 +55,11 @@ export default function Home() {
     const provider = new ethers.providers.Web3Provider(connection);
 
     const signer = provider.getSigner();
-    const contract = new ethers.Contract(nftmarketaddress, Market.abi, signer);
+    const contract = new ethers.Contract(
+      nftmarketaddress,
+      NFTMarket.abi,
+      signer
+    );
 
     const price = ethers.utils.parseunits(nft.price.toString(), "ether");
 
@@ -86,12 +90,14 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2 lg:grid-cols-4">
             {nfts.map((nft, i) => (
               <div key={i} className="overflow-hidden border shadow rounded-xl">
-                <Image
-                  src={nft.image}
-                  alt={nft.name}
-                  width={300}
-                  height={300}
-                />
+                <div className="relative h-80 w-80">
+                  <Image
+                    src={nft.image}
+                    alt={nft.name}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
                 <div className="p-4">
                   <p
                     style={{ height: "64px" }}
