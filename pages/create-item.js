@@ -121,6 +121,7 @@ export default function CreateItem() {
                 src={fileUrl}
                 layout="fill"
                 objectFit="cover"
+                alt="Uploaded file"
               />
             </div>
           )}
